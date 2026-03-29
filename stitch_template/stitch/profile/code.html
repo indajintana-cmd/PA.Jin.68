@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="th"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#ffb0c9",
+              "secondary-fixed": "#ffd9e2",
+              "surface-container-highest": "#e2e2e4",
+              "on-secondary-fixed-variant": "#792b4a",
+              "surface-bright": "#f9f9fb",
+              "secondary": "#964261",
+              "tertiary-fixed-dim": "#ffb1c5",
+              "surface-container-lowest": "#ffffff",
+              "on-error": "#ffffff",
+              "primary-fixed": "#dae2ff",
+              "surface-container-low": "#f3f3f5",
+              "on-tertiary-fixed-variant": "#8f0045",
+              "surface": "#f9f9fb",
+              "on-primary-container": "#7793da",
+              "primary-fixed-dim": "#b1c5ff",
+              "tertiary-container": "#60002c",
+              "on-surface": "#1a1c1d",
+              "error-container": "#ffdad6",
+              "outline": "#747781",
+              "inverse-surface": "#2f3132",
+              "on-tertiary-container": "#fd5892",
+              "tertiary-fixed": "#ffd9e1",
+              "primary-container": "#00296b",
+              "background": "#f9f9fb",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#e8e8ea",
+              "inverse-on-surface": "#f0f0f2",
+              "on-primary-fixed-variant": "#264486",
+              "surface-tint": "#405c9f",
+              "on-primary": "#ffffff",
+              "surface-container": "#eeeef0",
+              "surface-dim": "#d9dadc",
+              "on-secondary-container": "#792b4a",
+              "primary": "#001641",
+              "outline-variant": "#c4c6d2",
+              "on-primary-fixed": "#001947",
+              "inverse-primary": "#b1c5ff",
+              "on-surface-variant": "#444650",
+              "secondary-container": "#fe97b9",
+              "on-secondary-fixed": "#3e001e",
+              "on-tertiary-fixed": "#3f001a",
+              "on-background": "#1a1c1d",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "surface-variant": "#e2e2e4",
+              "tertiary": "#3a0018"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Inter', sans-serif; line-height: 1.6; }
+      h1, h2, h3, .headline { font-family: 'Manrope', sans-serif; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none h-20">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
+<div class="text-xl font-extrabold text-blue-900 dark:text-blue-50 tracking-tight italic">
+                The Scholarly Editorial
+            </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-blue-900 dark:text-pink-400 font-bold border-b-2 border-pink-500 pb-1" href="#">Profile</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Activities</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Certificates</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Gallery</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex items-center gap-2 bg-primary text-on-primary px-6 py-2.5 rounded-full text-sm font-bold transition-all hover:opacity-90 active:scale-95">
+                    Download PA PDF
+                </button>
+<span class="material-symbols-outlined text-primary text-3xl cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center overflow-hidden bg-surface">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-5 -z-10"></div>
+<div class="max-w-7xl mx-auto px-6 py-20 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="space-y-2">
+<span class="text-secondary font-bold tracking-[0.2em] uppercase text-xs font-label">วิชาชีพครูและการจัดการเรียนรู้</span>
+<h1 class="text-5xl lg:text-7xl font-extrabold text-primary leading-tight">
+                                ดร. ณิชาภัทร <br/><span class="text-secondary">โชคอนันต์สกุล</span>
+</h1>
+</div>
+<p class="text-on-surface-variant text-lg lg:text-xl max-w-2xl font-body">
+                            ครูเชี่ยวชาญ (คศ. 3) กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี 
+                            มุ่งมั่นสร้างนวัตกรรมการเรียนรู้ที่ตอบโจทย์ศตวรรษที่ 21 เพื่อศักยภาพสูงสุดของผู้เรียน
+                        </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold shadow-lg shadow-primary/10 flex items-center gap-2 hover:opacity-95 transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+                                ดูข้อตกลงในการพัฒนางาน (PA)
+                            </button>
+<button class="bg-secondary-fixed text-on-secondary-fixed-variant px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-secondary-fixed-dim transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                                ติดต่อสอบถาม
+                            </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10">
+<img alt="Professional Portrait" class="w-full h-full object-cover" data-alt="Professional Thai female teacher smiling warmly in business attire, clean modern background with soft natural lighting, high-end editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPFzafjMjJZPF-12EuSVUEeeQJuVg8MgtT4c45R7azpP5ivnRQ3Nj9F0zpz5hoH7b5sAQfbzjFDXBDr9AJ49S4adUzioxMWqyeuY-2BxLWA1YMHcj4pwC-fKK72y1kFsgyFmNi9uvJH0rDefXQboknHboNfdn-xqeUiHJuHBg8P0WT2p_431OpeHNQsKOGDR3JXt90-2a2270JQ4pw9ykcq_dmeXJNwm29orRWxqSlPLLvzcaf0HCqCmzj0OiG9J4NRF4xz3Gqm-U"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl z-20 hidden md:block">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div>
+<div class="text-primary font-bold text-lg leading-tight">15+ ปี</div>
+<div class="text-on-surface-variant text-xs font-label uppercase">ประสบการณ์การสอน</div>
+</div>
+</div>
+</div>
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary-fixed rounded-full opacity-30 -z-10 blur-3xl"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Professional Summary Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<h2 class="text-3xl font-bold text-primary mb-8 flex items-center gap-4">
+<span class="w-12 h-[2px] bg-secondary"></span>
+                            ประวัติและความเชี่ยวชาญ
+                        </h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed">
+<p class="text-lg">
+                                ปฏิบัติหน้าที่สอนรายวิชาวิทยาศาสตร์กายภาพและเทคโนโลยีการออกแบบ โดยเน้นการจัดการเรียนรู้แบบ Active Learning 
+                                และกระบวนการคิดเชิงออกแบบ (Design Thinking) เพื่อส่งเสริมทักษะการแก้ปัญหาระดับสูงของผู้เรียน
+                            </p>
+<div class="grid grid-cols-2 gap-6 pt-6">
+<div class="p-6 bg-surface-container-lowest rounded-lg border-l-4 border-secondary shadow-sm">
+<h4 class="font-bold text-primary mb-2">วิทยากรดีเด่น</h4>
+<p class="text-sm">ด้านสื่อการสอนดิจิทัล ระดับเขตพื้นที่การศึกษา 3 ปีซ้อน</p>
+</div>
+<div class="p-6 bg-surface-container-lowest rounded-lg border-l-4 border-primary shadow-sm">
+<h4 class="font-bold text-primary mb-2">ผู้นำทางวิชาการ</h4>
+<p class="text-sm">หัวหน้าโครงการพัฒนาศักยภาพผู้เรียนสู่ความเป็นเลิศ</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<div class="aspect-square rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Collaborative classroom environment with students working on tablets, bright and modern school interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIwjseZxOVxHtTh4k9IPcutVdeK4OQ3IbFV2PTW29bn2odnz8dEt4ub4vmWN_NkXmOZq8hz0lsrKDxceCYLVXoDSf-3H9reWS4VFxPe8GofJkd7EJ13e7w7ylB2P1wfOuy5O22xW6S-W7nzwvUtU5mxHmFqVKuk6AG38yCBj8s44thSC_V2fvfSqJbAnBQLkYjU518yYhi2tCnc5V5idQBmUMsIz4W4SnrJfgpHmUkP4ZBFLAoB_GtzswUOBI-bpWrSPuxWZZR9aY"/>
+</div>
+<div class="aspect-video rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Teacher explaining a concept to high school students in a well-equipped laboratory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl6nkXhtk82fYUYjqqDMxjjySoFQWvSfvsmHwu8swFlkTXpfQjswEqonBMurBVPtbykOAXUDWton28bbkTLAm5O8m0jI84TceMWW0v6a2c_l12VtW2Syu6PMUYZHU2_FS2z_KXSktLiilgrFPZ0O2IBE4VBf6SX_ENP_0-7dkquB0ud9cZEV06D_o5Ni2Vzr5MpOc9VpNHWmcEjHoxnKsKI5rrJZy06LcNctLIYTZ7Kl2gjPi_Zw2u9n3d9tnuTCEW1zDDXsGD22o"/>
+</div>
+</div>
+<div class="space-y-4">
+<div class="aspect-video rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Group of teachers brainstorming during a professional development workshop in a clean bright office space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIyEGwCqyU9-9OPB3uFb2BudqRwFBZKixQntCozJ96w82djB2lPsXmPcikTiGDhjsAjx6KFjE3_x79ot-m9ILFgM5pk6vl9rK9Nf1gf4g0G_VpUxFePuOwXFH0LiQVL9e7xslEIl9DmxQUNvP7Lr0IE6RyeHqeF6SYsKS18wxXEtnJVqqYyG9CWhlGfrmT0q6IsQfEu6l4Nf3cvJETE23qJP6H12QMeDlSGOcHidVCG5sGGTUlbkEzpGn9vpP6SIFB5VJ3sbwXuDI"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Artistic shot of graduation caps and certificates, celebrating educational achievement and success" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXUpsvP-STS1XSNHnrosDOCyw3hdVBtPb171IBGvF92viMfb5KqQxahYMzWCJxkSGnRzn-jIqb1KVIYIbrK_1zFwrlQUIpancDUVFsOBdn3L7C6Q_BSN9F9lZMEJO8mBSUOEYSlYC1qLoruj6aSqLGVCn-3kvYaRYSBGUumbOhZWujHG1Xa1vLGw4FSMlIawW_otHdR9oc_4wptrQBFTqSNxH7h1JIyKU9KuyEPMyu8pFBpaF-AdEdEq4iUC6kjAl5DhL-VbObYiU"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PA Goals Section - Bento Grid Layout -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16 space-y-4">
+<h2 class="text-4xl font-extrabold text-primary">ประเด็นท้าทาย (PA Highlights)</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">การมุ่งเน้นผลสัมฤทธิ์ของผู้เรียนผ่านกระบวนการจัดการเรียนรู้ที่ทันสมัยและตรวจสอบได้</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-primary p-10 rounded-xl text-on-primary relative overflow-hidden group">
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div class="space-y-4">
+<span class="bg-secondary text-on-primary px-3 py-1 rounded-full text-xs font-bold font-label uppercase tracking-widest">Focus 01</span>
+<h3 class="text-3xl font-bold leading-tight">การพัฒนาทักษะการคิดวิเคราะห์ <br/>ผ่านสื่อการเรียนรู้แบบ Interactive</h3>
+<p class="text-primary-fixed/80 max-w-lg">ยกระดับผลสัมฤทธิ์ทางการเรียนเพิ่มขึ้นร้อยละ 15 ด้วยการใช้ Gamification ในห้องเรียนวิทยาศาสตร์</p>
+</div>
+<div class="mt-8">
+<span class="text-6xl font-black opacity-20 font-headline">95%</span>
+<p class="text-sm font-label uppercase mt-2">ระดับความพึงพอใจของผู้เรียน</p>
+</div>
+</div>
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary-container rounded-full opacity-50 group-hover:scale-110 transition-transform duration-700"></div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/20 shadow-sm flex flex-col justify-between hover:shadow-lg transition-shadow">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="school">school</span>
+</div>
+<h3 class="text-xl font-bold text-primary">การพัฒนาสื่อการสอน</h3>
+<p class="text-on-surface-variant text-sm">จัดทำชุดการสอนดิจิทัลในรูปแบบ Micro-learning สำหรับการทบทวนความรู้นอกห้องเรียน</p>
+</div>
+<a class="text-secondary font-bold text-sm flex items-center gap-2 mt-6" href="#">
+                            ดูรายละเอียด <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/20 shadow-sm flex flex-col justify-between hover:shadow-lg transition-shadow">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="groups">groups</span>
+</div>
+<h3 class="text-xl font-bold text-primary">การแลกเปลี่ยนเรียนรู้ (PLC)</h3>
+<p class="text-on-surface-variant text-sm">นำทีมครูร่วมสร้างนวัตกรรมการสอน และถอดบทเรียนการจัดการห้องเรียนแบบรายบุคคล</p>
+</div>
+<a class="text-primary font-bold text-sm flex items-center gap-2 mt-6" href="#">
+                            ดูรายละเอียด <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-2 bg-secondary-fixed p-10 rounded-xl relative overflow-hidden group">
+<div class="flex flex-col md:flex-row gap-8 items-center relative z-10">
+<div class="flex-1 space-y-4">
+<h3 class="text-2xl font-extrabold text-on-secondary-container">การสร้างบรรยากาศแห่งการเรียนรู้</h3>
+<p class="text-on-secondary-fixed-variant">การจัดสภาพแวดล้อมที่เอื้อต่อการค้นคว้าด้วยตนเอง และส่งเสริมความปลอดภัยทางอารมณ์ของผู้เรียน</p>
+<ul class="space-y-2 pt-2">
+<li class="flex items-center gap-2 text-sm font-bold text-on-secondary-container">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                        ระบบเพื่อนช่วยเพื่อน (Buddy System)
+                                    </li>
+<li class="flex items-center gap-2 text-sm font-bold text-on-secondary-container">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                        กิจกรรมแนะแนวรายสัปดาห์
+                                    </li>
+</ul>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-lg bg-white/40 backdrop-blur-sm p-4 flex flex-col items-center justify-center text-center">
+<span class="text-4xl font-black text-secondary">A+</span>
+<span class="text-xs font-label text-on-secondary-fixed-variant mt-1 uppercase">การประเมินจากผู้บริหาร</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Navigation Cards (The "Links") -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<span class="text-secondary font-bold font-label uppercase tracking-widest text-xs">Portfolio Explorer</span>
+<h2 class="text-4xl font-extrabold text-primary mt-2">สำรวจผลงานการจัดการเรียนรู้</h2>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined" data-icon="keyboard_arrow_left">keyboard_arrow_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined" data-icon="keyboard_arrow_right">keyboard_arrow_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Activities Link -->
+<div class="group cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden rounded-xl mb-6 shadow-sm group-hover:shadow-xl transition-all duration-500">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Teacher and students engaged in a science experiment, hands-on learning activity in a bright lab" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr8APIjfbO737Xvjxb_iiIrpoUiqxRkGokNzMcqJZHw61aP1-Ktv9M4vxjS8c2m4jNqAgeX6vMGfamSS4r8VO-4lFQgongB5sbfsLxrlTVb35mpyFhkhInqzcq3ugMrlqKpnu65GENyAT06PBWUoZSCz5phFexQENJsie7gjJhcF-hzML00Mu_-r0RRXZX3DeYYBqAqkwEfPOX5t9Rxwfkj83ZHha0xQtI7EXHKnjuk8zkNtkQM2341xbWnLJH6BzM0dRvH8a5Dxc"/>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Activities</h3>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">รวบรวมกิจกรรมการจัดการเรียนรู้ การออกแบบแผนการสอน และบรรยากาศในชั้นเรียนที่ส่งเสริมทักษะผู้เรียน</p>
+<span class="text-primary font-bold text-xs font-label uppercase tracking-widest flex items-center gap-2">
+                            สำรวจกิจกรรม <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</span>
+</div>
+<!-- Certificates Link -->
+<div class="group cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden rounded-xl mb-6 shadow-sm group-hover:shadow-xl transition-all duration-500">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Stacks of professional education certificates and awards on a clean wooden table with soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxLesVsIZ-l5mfXprPQcftETN7EgevaeMojYSX4PEdHzZTRCL00F1vJQ1HjYTrBOL8m2BDGwX_TyVAbiTkrQWy_B0jrRdezuDDnsKCPt2A0sDs_FMpM9od9qCHNJrBE7sD1A9JrlspHdEm9_Pb-cvswHnspZ7m9W_ceWfBOTP7g2dsxyk6kU4SGQbr2gid5WH_uFCfaXDiYAjg0OO4z3AMNrQWyuQGQjyimmaUk5bHAEyzC7PmB96KajnDqPxA6xG0V4aboV4RW3o"/>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Certificates</h3>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">เกียรติบัตรแสดงวิทยฐานะ การฝึกอบรมพัฒนาวิชาชีพ และรางวัลความภูมิใจในระดับต่างๆ</p>
+<span class="text-primary font-bold text-xs font-label uppercase tracking-widest flex items-center gap-2">
+                            ดูเกียรติบัตร <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</span>
+</div>
+<!-- Gallery Link -->
+<div class="group cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden rounded-xl mb-6 shadow-sm group-hover:shadow-xl transition-all duration-500">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern creative workspace with digital devices and student projects on display, aesthetic and organized" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAArGgnYu2kSSAzSWVLIE3VQTIXzC_fXKnef0UqfIn9U8VYLla_h-R8_CrDxGv_YwJ_LnVt73IOkMzB5_fkIR-eQjI_x9Ejw9eXNhQqhVaebOK6Dfnq4L3D2ZLg7SP2l1CyX85q40d4oE_8OARYY4l2MuZSAAD-H0vSdoSGe0dBRys1viKlvHRkde3e5fJAUp7UcQ9Eqah0JIkVvqnzxHHo_KyMM02FwZbeAZtmGvjBfa1BbOSTT4uZKcFfRQEmSlZTlSJf9K2EeDA"/>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">Gallery</h3>
+<p class="text-on-surface-variant text-sm mb-4 line-clamp-2">คลังภาพและวิดีโอหลักฐานการปฏิบัติงาน ผลงานนักเรียน และภาพกิจกรรมส่งเสริมวิชาการ</p>
+<span class="text-primary font-bold text-xs font-label uppercase tracking-widest flex items-center gap-2">
+                            เปิดแกลเลอรี <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full gap-4 max-w-7xl mx-auto">
+<div class="flex flex-col gap-2">
+<div class="font-bold text-blue-900 dark:text-pink-400 text-xl">The Distinguished Curator.</div>
+<div class="font-medium text-xs Inter tracking-wide uppercase text-slate-400 dark:text-slate-500">
+                    © 2024 Performance Agreement Portfolio.
+                </div>
+</div>
+<div class="flex flex-wrap gap-6 items-center">
+<a class="text-slate-400 dark:text-slate-500 hover:text-blue-900 dark:hover:text-blue-300 font-medium text-xs Inter tracking-wide uppercase transition-opacity" href="#">Ministry of Education</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-blue-900 dark:hover:text-blue-300 font-medium text-xs Inter tracking-wide uppercase transition-opacity" href="#">Teacher Council</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-blue-900 dark:hover:text-blue-300 font-medium text-xs Inter tracking-wide uppercase transition-opacity" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<!-- FAB (Suppressed based on rules for profile page, but shown here as it's the Home landing for a focused user action: downloading their own portfolio if they are the owner) -->
+<div class="fixed bottom-8 right-8 z-40 md:hidden">
+<button class="bg-primary text-on-primary w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+</button>
+</div>
+</body></html>

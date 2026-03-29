@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="light" lang="th">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>คลังภาพกิจกรรม - KruJin Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;family=Kanit:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#ffb0c9",
+              "secondary-fixed": "#ffd9e2",
+              "surface-container-highest": "#e2e2e4",
+              "on-secondary-fixed-variant": "#792b4a",
+              "surface-bright": "#f9f9fb",
+              "secondary": "#964261",
+              "tertiary-fixed-dim": "#ffb1c5",
+              "surface-container-lowest": "#ffffff",
+              "on-error": "#ffffff",
+              "primary-fixed": "#dae2ff",
+              "surface-container-low": "#f3f3f5",
+              "on-tertiary-fixed-variant": "#8f0045",
+              "surface": "#f9f9fb",
+              "on-primary-container": "#7793da",
+              "primary-fixed-dim": "#b1c5ff",
+              "tertiary-container": "#60002c",
+              "on-surface": "#1a1c1d",
+              "error-container": "#ffdad6",
+              "outline": "#747781",
+              "inverse-surface": "#2f3132",
+              "on-tertiary-container": "#fd5892",
+              "tertiary-fixed": "#ffd9e1",
+              "primary-container": "#00296b",
+              "background": "#f9f9fb",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#e8e8ea",
+              "inverse-on-surface": "#f0f0f2",
+              "on-primary-fixed-variant": "#264486",
+              "surface-tint": "#405c9f",
+              "on-primary": "#ffffff",
+              "surface-container": "#eeeef0",
+              "surface-dim": "#d9dadc",
+              "on-secondary-container": "#792b4a",
+              "primary": "#001641",
+              "outline-variant": "#c4c6d2",
+              "on-primary-fixed": "#001947",
+              "inverse-primary": "#b1c5ff",
+              "on-surface-variant": "#444650",
+              "secondary-container": "#fe97b9",
+              "on-secondary-fixed": "#3e001e",
+              "on-tertiary-fixed": "#3f001a",
+              "on-background": "#1a1c1d",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "surface-variant": "#e2e2e4",
+              "tertiary": "#3a0018"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "Kanit"],
+              "body": ["Inter", "Kanit"],
+              "label": ["Inter", "Kanit"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body { font-family: 'Kanit', sans-serif; line-height: 1.6; }
+      h1, h2, h3 { font-family: 'Kanit', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+    <!-- TopAppBar -->
+    <header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none h-20">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
+            <div class="text-xl font-extrabold text-blue-900 dark:text-blue-50 tracking-tight italic">
+                KruJin Portfolio
+            </div>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="index.html">Profile</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="activities.html">Activities</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="certificates.html">Certificates</a>
+                <a class="text-blue-900 dark:text-pink-400 font-bold border-b-2 border-pink-500 pb-1" href="gallery.html">Gallery</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="jin-ระบุ.pdf" class="bg-primary text-on-primary px-5 py-2 rounded-full text-sm font-bold active:scale-95 transition-all">
+                    Download PA PDF
+                </a>
+                <span class="material-symbols-outlined text-primary text-2xl cursor-pointer">account_circle</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+        <!-- Hero Header -->
+        <section class="mb-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <span class="text-secondary font-bold tracking-[0.2em] text-xs uppercase mb-2 block">Visual Evidence Portfolio</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-primary tracking-tight leading-none mb-4">
+                        Activity Photos &amp; <br/><span class="text-secondary-container">Gallery</span>
+                    </h1>
+                </div>
+                <div class="max-w-md text-on-surface-variant mb-2">
+                    <p class="text-lg">รวมภาพกิจกรรมการจัดการเรียนรู้และโครงการต่างๆ ที่สะท้อนถึงมาตรฐานวิทยฐานะและการปฏิบัติงานตามข้อตกลง PA</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Gallery -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <!-- Large Feature Card -->
+            <div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/9]">
+                <img alt="In-classroom activity" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="14492370_1762954260623553_259407975919096628_n.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                    <div class="bg-surface-container-highest/90 backdrop-blur-md p-6 rounded-lg max-w-lg">
+                        <h3 class="text-2xl font-bold text-primary mb-2">กิจกรรมการเรียนรู้ในห้องเรียน</h3>
+                        <p class="text-sm text-on-surface-variant">บรรยากาศการจัดการเรียนรู้ที่เน้นผู้เรียนเป็นสำคัญ และการมีส่วนร่วมของนักเรียน</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Small Square Card -->
+            <div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-square">
+                <img alt="PLC Meeting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="14520484_1762981587287487_2181216325222006014_n.jpg"/>
+                <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-[2px]">
+                    <span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+                </div>
+            </div>
+
+            <!-- Vertical Card -->
+            <div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[3/4]">
+                <img alt="Seminar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="14595688_1762959180623061_6830460705467860050_n.jpg"/>
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-primary/60 p-6 flex flex-col justify-end">
+                    <p class="text-white text-xl font-bold">สัมมนาและอบรมวิชาการ</p>
+                </div>
+            </div>
+
+            <!-- Wide Card -->
+            <div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[2/1]">
+                <img alt="Learning outdoors" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="14632879_1762954997290146_1909415546484957620_n.jpg"/>
+                <div class="absolute inset-0 flex items-end p-8 bg-gradient-to-t from-primary/40 to-transparent">
+                    <div class="text-white">
+                        <h3 class="text-2xl font-bold mb-1">กิจกรรมส่งเสริมทักษะผู้เรียน</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Grid Items -->
+            <div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-square">
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="14642043_1762959363956376_4877862567375770439_n.jpg"/>
+            </div>
+            <div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-square">
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="14657464_1762955233956789_3065570005037792743_n.jpg"/>
+            </div>
+            <div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-square">
+                <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="993488_618621688175601_65244270_n.jpg"/>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t-0 bg-slate-50 dark:bg-slate-900">
+        <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full gap-4 max-w-7xl mx-auto">
+            <div class="flex flex-col gap-2">
+                <span class="font-bold text-blue-900 dark:text-pink-400">KruJin Portfolio</span>
+                <p class="font-medium text-xs Inter tracking-wide uppercase text-slate-400 dark:text-slate-500">
+                    © 2024 Performance Agreement Portfolio.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="light" lang="th">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>กิจกรรมและการพัฒนาวิชาชีพ - KruJin Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Kanit:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#ffb0c9",
+              "secondary-fixed": "#ffd9e2",
+              "surface-container-highest": "#e2e2e4",
+              "on-secondary-fixed-variant": "#792b4a",
+              "surface-bright": "#f9f9fb",
+              "secondary": "#964261",
+              "tertiary-fixed-dim": "#ffb1c5",
+              "surface-container-lowest": "#ffffff",
+              "on-error": "#ffffff",
+              "primary-fixed": "#dae2ff",
+              "surface-container-low": "#f3f3f5",
+              "on-tertiary-fixed-variant": "#8f0045",
+              "surface": "#f9f9fb",
+              "on-primary-container": "#7793da",
+              "primary-fixed-dim": "#b1c5ff",
+              "tertiary-container": "#60002c",
+              "on-surface": "#1a1c1d",
+              "error-container": "#ffdad6",
+              "outline": "#747781",
+              "inverse-surface": "#2f3132",
+              "on-tertiary-container": "#fd5892",
+              "tertiary-fixed": "#ffd9e1",
+              "primary-container": "#00296b",
+              "background": "#f9f9fb",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#e8e8ea",
+              "inverse-on-surface": "#f0f0f2",
+              "on-primary-fixed-variant": "#264486",
+              "surface-tint": "#405c9f",
+              "on-primary": "#ffffff",
+              "surface-container": "#eeeef0",
+              "surface-dim": "#d9dadc",
+              "on-secondary-container": "#792b4a",
+              "primary": "#001641",
+              "outline-variant": "#c4c6d2",
+              "on-primary-fixed": "#001947",
+              "inverse-primary": "#b1c5ff",
+              "on-surface-variant": "#444650",
+              "secondary-container": "#fe97b9",
+              "on-secondary-fixed": "#3e001e",
+              "on-tertiary-fixed": "#3f001a",
+              "on-background": "#1a1c1d",
+              "on-tertiary": "#ffffff",
+              "error": "#ba1a1a",
+              "on-error-container": "#93000a",
+              "surface-variant": "#e2e2e4",
+              "tertiary": "#3a0018"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "Kanit"],
+              "body": ["Inter", "Kanit"],
+              "label": ["Inter", "Kanit"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Kanit', sans-serif; line-height: 1.6; }
+        h1, h2, h3, .display-text { font-family: 'Kanit', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+    <!-- TopAppBar -->
+    <header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none h-20">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-full">
+            <div class="text-xl font-extrabold text-blue-900 dark:text-blue-50 tracking-tight italic">
+                KruJin Portfolio
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="index.html">Profile</a>
+                <a class="text-blue-900 dark:text-pink-400 font-bold border-b-2 border-pink-500 pb-1" href="activities.html">Activities</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="certificates.html">Certificates</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="gallery.html">Gallery</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="jin-ระบุ.pdf" class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm hover:scale-95 transition-all duration-150 active:scale-90">
+                    Download PA PDF
+                </a>
+                <span class="material-symbols-outlined text-primary text-3xl cursor-pointer">account_circle</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+        <!-- Hero Header -->
+        <section class="mb-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                <div>
+                    <span class="font-label text-secondary font-bold tracking-[0.05rem] text-sm uppercase">Performance Agreement Portfolio</span>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-primary mt-2 tracking-tight">
+                        Teaching and <br/><span class="text-secondary">Professional Activities</span>
+                    </h1>
+                    <p class="mt-6 text-on-surface-variant max-w-2xl text-lg">
+                        รวบรวมกิจกรรมการจัดการเรียนรู้และการพัฒนาตนเองทางวิชาชีพ เพื่อยกระดับคุณภาพการศึกษาและตอบสนองต่อเกณฑ์การประเมินวิทยฐานะ (PA)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <!-- Featured Activity -->
+            <div class="md:col-span-8 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm group transition-all duration-300 hover:shadow-lg">
+                <div class="relative h-80 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="14516416_1762979303954382_7003275195157579880_n.jpg"/>
+                    <div class="absolute top-4 left-4 bg-primary text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Highlight
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="text-secondary font-bold font-label uppercase text-xs tracking-widest">การจัดการเรียนรู้</span>
+                        <div class="h-px flex-grow bg-surface-container-highest"></div>
+                    </div>
+                    <h2 class="text-3xl font-bold text-primary mb-4 leading-tight">โครงการพัฒนานวัตกรรมการเรียนรู้ Active Learning ในวิชาภาษาอังกฤษ</h2>
+                    <p class="text-on-surface-variant mb-8 line-clamp-3">
+                        การจัดกิจกรรมการเรียนรู้ที่เน้นให้ผู้เรียนได้ลงมือปฏิบัติจริง โดยใช้กระบวนการคิดวิเคราะห์มาประยุกต์ใช้ในการสื่อสาร ผลลัพธ์ที่ได้คือผู้เรียนมีความมั่นใจในการใช้ภาษาเพิ่มขึ้นอย่างมีนัยสำคัญ
+                    </p>
+                </div>
+            </div>
+
+            <!-- Secondary Activity -->
+            <div class="md:col-span-4 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between border border-transparent hover:border-secondary/20 transition-all">
+                <div>
+                    <span class="text-primary/60 font-bold font-label text-xs uppercase mb-6 block">Seminar &amp; Workshop</span>
+                    <h3 class="text-2xl font-bold text-primary mb-4 leading-tight">การอบรมเชิงปฏิบัติการพัฒนาสื่อการสอนดิจิทัล</h3>
+                    <p class="text-on-surface-variant text-sm mb-6">
+                        การประยุกต์ใช้เทคโนโลยีเพื่อการสร้างสื่อการสอนที่มีประสิทธิภาพและลดภาระงานครู
+                    </p>
+                </div>
+                <div>
+                    <div class="text-secondary font-bold text-sm mb-4 italic">2566</div>
+                </div>
+            </div>
+
+            <!-- More Items -->
+            <div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col gap-4">
+                <img class="w-full h-40 object-cover rounded-lg" src="14523162_1762953653956947_6830010184868712808_n.jpg"/>
+                <span class="text-secondary font-bold text-xs uppercase tracking-tighter">กิจกรรม PLC</span>
+                <h4 class="text-lg font-bold text-primary leading-snug">แลกเปลี่ยนเรียนรู้แนวทางการจัดการเรียนการสอน</h4>
+                <p class="text-sm text-on-surface-variant">การประชุมชุมชนแห่งการเรียนรู้ทางวิชาชีพเพื่อแก้ปัญหาทักษะการอ่านภาษาอังกฤษ</p>
+            </div>
+            <div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col gap-4">
+                <img class="w-full h-40 object-cover rounded-lg" src="14590465_1762959017289744_5030308639466893230_n.jpg"/>
+                <span class="text-secondary font-bold text-xs uppercase tracking-tighter">สื่อการสอน</span>
+                <h4 class="text-lg font-bold text-primary leading-snug">พัฒนาบทเรียนคอมพิวเตอร์ช่วยสอน (CAI)</h4>
+                <p class="text-sm text-on-surface-variant">สื่อการสอนมัลติมีเดียเพื่อกระตุ้นความสนใจของผู้เรียนในรายวิชาภาษาอังกฤษ</p>
+            </div>
+            <div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-center items-center text-center relative overflow-hidden group">
+                <div class="absolute -right-4 -bottom-4 opacity-10 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-[120px]">workspace_premium</span>
+                </div>
+                <h4 class="text-xl font-bold mb-4">ผลงานดีเด่น ประจำปี 2566</h4>
+                <p class="text-sm text-on-primary-container mb-6 italic leading-relaxed">"ครูผู้สอนดีเด่น ด้านนวัตกรรมการศึกษา"</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 dark:bg-slate-900 mt-20">
+        <div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full gap-4 max-w-7xl mx-auto">
+            <div class="flex flex-col gap-2">
+                <div class="font-bold text-blue-900 dark:text-pink-400 text-lg">KruJin Portfolio</div>
+                <p class="font-medium text-xs Inter tracking-wide uppercase text-slate-400 dark:text-slate-500">© 2024 Performance Agreement Portfolio.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
